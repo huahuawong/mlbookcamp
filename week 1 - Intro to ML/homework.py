@@ -27,6 +27,5 @@ df_extracted["Engine HP"].isnull().sum()
 # Now, calcualte the average of "Engine HP" again.
 # Has it changed?
 
-print("The average engine HP before transformation in the dataset is: ", np.average(df_extracted['Engine HP']))
-mean(df_extracted["Engine HP"])
-mean([1, 2, 3])
+print("The average engine HP before transformation in the dataset is: ", df_extracted["Engine HP"].mean(axis=0))
+
